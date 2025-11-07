@@ -12,11 +12,12 @@
 
 Functions:
     - Main: 
-        - take input of names
+        - take input of number of family members
         - call other functions
     - 1. print out intro
     - 2. run the died of dysentery 
     - 3. runs the questions 
     - 4. output finish or lose screen 
-    - 5. digital drawing of wagon 
+    - 5. function to take input of names for family members
+   
     
