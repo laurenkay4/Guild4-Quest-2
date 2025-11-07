@@ -20,7 +20,7 @@ int main()
    cout << "Please enter the number of family members (guild members): ";
    cin >> numOfMembers;
    
-   FamilyNames(numOfMembers); 
+   //FamilyNames(numOfMembers); 
 
    vector<string> famNames = FamilyNames(numOfMembers);
    Death(famNames, numOfMembers);
@@ -87,52 +87,52 @@ void IntroDisplay(){ // Complete
 //prints out the death message for a random guild member and removes them from the vector
 int Death(vector<string>& famNames, int numOfMembers) {
    
-      random_device randomMember;
-      mt19937 gen(randomMember());
-      uniform_int_distribution<> pickMember(1, numOfMembers);
-      
-      int death = pickMember(gen);
-      
-      string deathMessage[21] = {
-            "died of dysentary.",
-            "died for literally no reason.",
-            "died from stubbing their toe.",
-            "been mauled by another family member (for being too annoying).",
-            "died from a spontaneous bear attack.",
-            "been fatally ran over by a wagon wheel.",
-            "died from diphtheria.",
-            "died for being born.",
-            "been fatally struck by lightning.",
-            "died from tetanus.",
-            "died from boredom.",
-            "died from lupus (It's never lupus. - Dr. House).",
-            "a missing foot from a hungry wolf (which killed them).",
-            "died from ebola.",
-            "died after falling off a cliff.",
-            "died from undiagnosed metastatic brain cancer.",
-            "died from mold...",
-            "died from The Cheese Touch.",
-            "died from an unreasonable amount of explosions. BANGGGG!!",
-            "died.",
-            "died from spontaneous combustion.",
-      };
+    random_device randomMember;
+    mt19937 gen(randomMember());
+    uniform_int_distribution<> pickMember(1, numOfMembers);
+    
+    int death = pickMember(gen);
+
+    string deathMessage[21] = {
+        "died of dysentary.",
+        "died for literally no reason.",
+        "died from stubbing their toe.",
+        "been mauled by another family member (for being too annoying).",
+        "died from a spontaneous bear attack.",
+        "been fatally ran over by a wagon wheel.",
+        "died from diphtheria.",
+        "died for being born.",
+        "been fatally struck by lightning.",
+        "died from tetanus.",
+        "died from boredom.",
+        "died from lupus (It's never lupus. - Dr. House).",
+        "a missing foot from a hungry wolf (which killed them).",
+        "died from ebola.",
+        "died after falling off a cliff.",
+        "died from undiagnosed metastatic brain cancer.",
+        "died from mold...",
+        "died from The Cheese Touch.",
+        "died from an unreasonable amount of explosions. BANGGGG!!",
+        "died.",
+        "died from spontaneous combustion.",
+    };
 	  
 	  random_device randMessage;
-      mt19937 gen1(randMessage());
-      uniform_int_distribution<> pickMessage(0, 21);
-      
-      int deathIndex = pickMessage(gen1);
-      
-      cout << death << " has " << deathMessage[deathIndex] << endl;
-      
-      if (death < famNames.size()) {
-          famNames.erase(famNames.begin() + death);
-      }
-      
-      numOfMembers--;
-      cout << numOfMembers << " members remain.\n";
-      
-      return numOfMembers;
+    mt19937 gen1(randMessage());
+    uniform_int_distribution<> pickMessage(0, 21);
+
+    int deathIndex = pickMessage(gen1);
+
+    cout << famNames[death - 1] << " has " << deathMessage[deathIndex] << endl;
+    
+    if (death < famNames.size()) {
+        famNames.erase(famNames.begin() + death);
+    }
+
+    numOfMembers--;
+    cout << numOfMembers << " members remain.\n";
+
+    return numOfMembers;
 }
 
 // prints final end screen if they fail the game
