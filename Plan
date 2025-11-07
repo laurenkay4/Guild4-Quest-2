@@ -8,3 +8,15 @@
     - have points based off of correct answer and response time
     - need to score a certain % of right answers to win 
 4. maybe include digital graphics made from * 
+
+
+Functions:
+    - Main: 
+        - take input of names
+        - call other functions
+    - 1. print out intro
+    - 2. run the died of dysentery 
+    - 3. runs the questions 
+    - 4. output finish or lose screen 
+    - 5. digital drawing of wagon 
+    
