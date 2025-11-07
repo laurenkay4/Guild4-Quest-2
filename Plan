@@ -1,0 +1,10 @@
+1. We must create an array that holds the questions the user 'will ask' (the program will generate the question for the user to mimic the user asking the question)
+2. we need to create an array that holds the 'answer' to the question (could be true or false) and then the user has to determine whether the answer is true or false
+    - figure out what array method will work best: 2 1D style or a 2D style
+3. we need to figure out how we want the style of the game:
+    - oregon trail: enter the number of players (guild members) inbetween questions have prompts like 'jake died of dysentery' then they can no longer help to answer questions
+        - use vectors to add and remove names
+    - multiple levels where you need to score a certain amount to move on
+    - have points based off of correct answer and response time
+    - need to score a certain % of right answers to win 
+4. maybe include digital graphics made from * 
