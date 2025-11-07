@@ -5,8 +5,10 @@
 using namespace std; 
 
 
-void IntroDisplay();      //complete
-void FamilyNames(int n);  //complete
+void IntroDisplay();
+void FamilyNames(int n); 
+void FailEndScreen();
+void SuccessEndScreen();
 
 int main()
 {
@@ -14,19 +16,17 @@ int main()
    
    int num = 0;
    cout << "Please enter the number of family members (guild members): ";
-   cin >> num;
+   cin >> numOfMembers;
    
-   FamilyNames(num); 
+   FamilyNames(numOfMembers); 
 
     return 0;
 }
 
 
+//Functions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-void FamilyNames(int n) { 
+void FamilyNames(int n) {
     int numFamMem = n;
     string name;
     vector<string> famNames;
@@ -41,7 +41,7 @@ void FamilyNames(int n) {
 }
 
 
-void IntroDisplay(){ 
+void IntroDisplay(){ // Complete 
     
     cout << "***** The N vs NP Trail *****" << endl;
     
@@ -74,3 +74,13 @@ void IntroDisplay(){
     cout << "\nGood Luck Travelers\n" << endl;
     
 }
+
+void FailEndScreen(){
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "\nFailed: everyone in your family has died before reaching Oregon"
+}
+
+void SuccessEndScreen(){
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+    cout << "\nCongratulations! You successfully reached Nort Portland Oregon."
+}	
