@@ -82,5 +82,5 @@ void FailEndScreen(){
 
 void SuccessEndScreen(){
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-    cout << "\nCongratulations! You successfully reached Nort Portland Oregon."
+    cout << "\nCongratulations! You successfully reached North Portland Oregon."
 }	
