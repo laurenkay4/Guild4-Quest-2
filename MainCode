@@ -14,7 +14,7 @@ int main()
 {
    IntroDisplay();
    
-   int num = 0;
+   int numOfMembers = 0;
    cout << "Please enter the number of family members (guild members): ";
    cin >> numOfMembers;
    
@@ -77,10 +77,10 @@ void IntroDisplay(){ // Complete
 
 void FailEndScreen(){
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-    cout << "\nFailed: everyone in your family has died before reaching Oregon"
+    cout << "\nFailed: everyone in your family has died before reaching Oregon";
 }
 
 void SuccessEndScreen(){
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-    cout << "\nCongratulations! You successfully reached North Portland Oregon."
-}	
+    cout << "\nCongratulations! You successfully reached North Portland Oregon.";
+}
